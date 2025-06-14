@@ -21,7 +21,8 @@
     --vermelho: #c52d2f;
     --cinza-claro: #f2f2f2;
     --cinza-escuro: #2e2e2e;
-    --cinza-fonte: #4e4e4e;
+    --cinza-fonte1: #4e4e4e;
+    --cinza-fonte2: #787878;
 }
 
 
@@ -67,7 +68,7 @@ header{
 }
 
 
-/***   slider   ***************************************/
+/***   slider   ******************************************************/
 #slider {
     position: relative;
     width: 100%;
@@ -157,4 +158,47 @@ header{
     opacity: 1;
     border-color: var(--vermelho);
     background-color: var(--vermelho);
+}
+
+/***   features   ******************************************************/
+#features{
+    height: 548px;
+    text-align: center;
+}
+
+.titulo h2{
+    color: var(--cinza-fonte1);
+    font-size: 2.25rem;
+    padding-bottom: 55px;
+    margin-top: 70px;
+
+}
+
+.feat-wrap{
+    display: flex;
+}
+
+.feat-itens{
+    width: 360px;
+    height: 324px;
+    text-align: center;
+}
+
+.feat-itens img{
+    width: 180px;
+}
+
+.feat-itens h3{
+    color: var(--cinza-fonte2);
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.feat-itens h2{
+    color: var(--cinza-fonte1);
+    margin-top: 10px;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
