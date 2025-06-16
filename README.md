@@ -27,7 +27,7 @@
 
 - HTML5  
 - CSS3  
-- JavaScript (Vanilla JS)
+- JavaScript
 
 ---
 
@@ -38,6 +38,7 @@
    git clone https://github.com/KlaudioSilva/spessoto-clone.git
 
 2. Acesse a pasta do projeto / Enter the project folder:
+   ```bash
    cd spessoto-clone
 
 3. Abra o arquivo index.html no seu navegador / Open the index.html file in your browser.
