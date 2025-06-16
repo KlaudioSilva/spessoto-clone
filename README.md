@@ -1,4 +1,4 @@
-# 🧱 Clone do site da loja Spessoto Materiais para Construção
+# 🧱 Clone do site Spessoto Materiais para Construção
 
 > 🇧🇷 Este projeto é um clone do site da loja de materiais de construção **Spessoto**, criado com fins educacionais.  
 > 🇺🇸 This project is a clone of the **Spessoto** construction materials store website, developed for educational purposes.
