@@ -352,3 +352,22 @@ header{
     font-size: 1.9rem;
     margin-bottom: 16px;
 }
+
+/***   google map   ***********************************************************/
+.map{
+    height: 400px;
+    width: 100%;
+}
+
+/***   footer   **************************************************************/
+#footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: var(--cinza-escuro);
+    color: var(--cinza-claro);
+}
+
+#footer .container{
+    display: flex;
+    justify-content: space-between;
+}
