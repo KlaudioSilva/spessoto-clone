@@ -19,8 +19,10 @@
     --preto: #000000;
     --branco: #ffffff;
     --vermelho: #c52d2f;
+    --vermelho-icone: #df1921;
     --cinza-claro: #f2f2f2;
     --cinza-escuro: #2e2e2e;
+    --cinza-medio: #c2c1c1;
     --cinza-fonte1: #4e4e4e;
     --cinza-fonte2: #787878;
 }
@@ -137,13 +139,13 @@ header{
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 16px;
     z-index: 3;
 }
 
 .indicadores span {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     padding: 1px;
     background-clip: content-box;
     background-color: var(--branco);
@@ -162,7 +164,7 @@ header{
 
 /***   features   ******************************************************/
 #features{
-    height: 548px;
+    height: 480px;
     text-align: center;
 }
 
@@ -171,11 +173,12 @@ header{
     font-size: 2.25rem;
     padding-bottom: 55px;
     margin-top: 70px;
-
+    text-align: center;
 }
 
 .feat-wrap{
     display: flex;
+    justify-content: center;
 }
 
 .feat-itens{
@@ -201,4 +204,151 @@ header{
     font-size: 1.25rem;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+/***   marcas   ***********************************************************/
+#fornecedores{
+    background: url(/images/loja-inteira.jpg) no-repeat;
+    width: 100%;
+    height: 410px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#fornecedores ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+.marcas{
+    width: 190px;
+    height: 166px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 21px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-style: solid;
+    border-color: var(--vermelho);
+    border-width: thick;
+}
+
+.marcas img{
+    width: 160px;
+    height: 160px;
+}
+
+/***   produtos   ***********************************************************/
+#produtos .container{
+    margin-bottom: 70px;
+}
+
+.prod-cabecalho{
+    padding-bottom: 55px;
+}
+
+.titulo h2{
+    padding-bottom: 20px;
+}
+.titulo p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--cinza-fonte2);
+    text-align: center;
+}
+
+.amostras-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.produto{
+    position: relative;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    width: 280px;
+    height: 210px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-produto img{
+    object-fit: cover;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--vermelho);
+    
+    opacity: 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    transition: opacity 0.6s ease;
+    padding: 30px 0;
+}
+
+.overlay a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.overlay h3{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.overlay p{
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.produto:hover img{
+    opacity: 0;
+}
+
+.produto:hover .overlay{
+    opacity: 1;
+}
+
+/***   contatos   ***********************************************************/
+#contato{
+    background: #eee;
+    box-shadow: inset 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+    color: #3e383a;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 70px 0;
+}
+
+.container{
+    justify-content: center;
+}
+
+.contato-tipo{
+    display: flex;
+    text-align: center;
+}
+
+.contato-tipo ul{
+    width: 370px;
+}
+
+.contato-tipo ul li a{
+    color: var(--vermelho);
+}
+
+.fa-solid.fa-location-dot, 
+.fa-solid.fa-phone, 
+.fa-regular.fa-clock{
+    color: var(--vermelho-icone);
+    font-size: 1.9rem;
+    margin-bottom: 16px;
 }

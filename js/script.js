@@ -1,4 +1,4 @@
-//--slider animado e controle manual --------------------
+//--slider animado e controle manual --------------------------------//
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
@@ -6,25 +6,25 @@ const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 const indicadoresContainer = document.querySelector('.indicadores');
 
-// Criar os spans
+//--Criar os spans
 slides.forEach((_, index) => {
-  const dot = document.createElement('span');
-  dot.addEventListener('click', () => {
-    currentSlide = index;
-    showSlide(currentSlide);
-    updateIndicadores();
-  });
-  indicadoresContainer.appendChild(dot);
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+        updateIndicadores();
+    });
+    indicadoresContainer.appendChild(dot);
 });
 
-// Seleciona todos os indicadores criados
+//--Seleciona todos os indicadores criados
 const indicadores = document.querySelectorAll('.indicadores span');
 
-// Atualiza os indicadores
+//--Atualiza os indicadores
 function updateIndicadores() {
-  indicadores.forEach((dot, i) => {
-    dot.classList.toggle('active', i === currentSlide);
-  });
+    indicadores.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+    });
 }
 
 function showSlide(index) {
@@ -47,8 +47,7 @@ function prevSlide() {
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-// Auto troca a cada 5 segundos
+//--Auto troca a cada 5 segundos
 setInterval(nextSlide, 5000);
 
-// Inicial
-showSlide(currentSlide);
+showSlide(currentSlide);  //--Onde tudo começa
